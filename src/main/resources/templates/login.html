@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:frament="head">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Inicio</title>
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+     <!-- inconos-->
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/af368442cf.js" crossorigin="anonymous"></script>
+    
+    <!-- estilos de css-->
+    <link href="/css/footer.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <header th:replace="index::header"> </header>
+
+    <section class="page-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="bg-faded p-5 rounded">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading-upper">Iniciar sesion</span>
+                        </h2>
+                        <form th:action="@{/login}" method="post">
+                            <div th:if="${param.error}">
+                                <div class="alert alert-danger">Usuario o contraseña inválidos</div>
+                            </div>
+                            <div th:if="${param.logout}">
+                                <div class="alert alert-info">Ha cerrado sesión exitosamente</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="username" class="form-label">Nombre de usuario</label>
+                                <input id="username" name="username" type="text" class="form-control" required autofocus="autofocus" placeholder="Digite su email ID">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input id="password" type="password" name="password" class="form-control" required placeholder="Digite su password">
+                            </div>
+                            <button type="submit" class="btn btn-warning" name="login-submit" id="login-submit">Iniciar sesión</button>
+                        </form>
+                        <div class="form-group mt-4">
+                             <span>Si eres nuevo usuario <a th:href="@{/registro}" style="color: inherit; text-decoration: underline; transition: color 0.3s;" onmouseover="this.style.color='brown'" onmouseout="this.style.color='inherit'">regístrate aquí</a></span>
+                       </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!--footer-------------------------------->
+
+  <footer th:replace="index::footer"> </footer>
+    <script src="../static/scripts.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.opiniones {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.opiniones h1 {
+    margin-bottom: 20px;
+}
+
+.comentario {
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    vertical-align: top;
+}
+
+.user img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.user h3 {
+    margin: 10px 0;
+}
+
+.comentarios p {
+    font-size: 14px;
+    color: #333;
+}

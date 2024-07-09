@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:frament="head">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Inicio</title>
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+     <!-- inconos-->
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/af368442cf.js" crossorigin="anonymous"></script>
+    
+    <!-- estilos de css-->
+    <link href="/css/footer.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <header th:fragment="header">
+        <h1 class="site-heading text-center text-faded d-none d-lg-block">
+            <span class="site-heading-upper text-primary mb-3">CAFE CON ESTILO</span>
+            <span class="site-heading-lower">Coffee</span>
+        </h1>
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand text-uppercase fw-bold d-lg-none" th:href="@{/index}">Cafe con Estilo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" th:href="@{/index}">Inicio</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" th:href="@{/foro}">Foro</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" th:href="@{/tienda}">Tienda</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" th:href="@{/carrito}">Carrito</a></li>
+                        <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="../logout">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+
+      <!--  - cards  -->
+      <article class="container ">
+        <section class="cards-grid"> 
+
+            <section class="card">
+            <setion class="card-img">
+                <img src="/img/queques.jpg" class="img-fluid">
+            </setion>
+            <section class="card-contenido">
+                <h1 class="card-titulo">Dulceria <br> </h1>
+                <a href="#" class="card-boton">Lo mejor en dulces</a>
+            </section>
+            </section> 
+
+            <section class="card">
+                <setion class="card-img">
+                    <img src="/img/cachitos.jpg" alt="" class="img-fluid">
+                </setion>
+                <section class="card-contenido">
+                    <h2 class="card-titulo">Panes  <br> </h2>
+                    <a href="#" class="card-boton">Artesanales</a>
+                </section>
+                </section>
+            
+
+            <section class="card">
+                <setion class="card-img">
+                    <img src="/img/pastel.jpg" alt="" class="img-fluid">
+                </setion>
+                <section class="card-contenido">
+                    <h1 class="card-titulo">Pasteleria <br> </h1>
+                    <a href="#" class="card-boton">Reposteria</a>
+                </section>
+                </section>
+
+
+            <section class="card">
+                <setion class="card-img">
+                    <img src="/img/empanada.jpg"  class="img-fluid">
+                </setion>
+                <section class="card-contenido">
+                    <h2 class="card-titulo">Desayunos</h2>
+                    <a href="#" class="card-boton">Cafe y su empanada</a>
+                </section>
+                </section>
+
+            </section>
+        </section>
+    </article> 
+    <br><br><br><br><br>
+
+
+	<!--carosel-->
+	<div class="container-fluid p-3">
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="/img/1baner.png" class="d-block w-100" height="500">
+				</div>
+				<div class="carousel-item">
+					<img src="/img/2baner.jpg" class="d-block w-100" height="500">
+				</div>
+				<div class="carousel-item">
+					<img src="/img/baner.jpg" class="d-block w-100" height="500">
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden"></span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden"></span>
+			</button>
+		</div>
+
+	</div>
+
+    <video src="/img/xd.mp4"  width="" height="400" controls></video>
+
+    <!--  inicio foooter-->
+    <footer  th:fragmant="footer" class="pie-pagina" id="pata">
+
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="">
+                        <img src="https://pbs.twimg.com/media/FM16RyIXIAcAK3W.jpg" alt="logo"></a>
+                </figure>
+            </div>
+        
+      
+        <div class="box">
+            <h2>DATOS </h2>
+            <p>Estudiante de Certus</p>
+            <p>NOOB en programacion</p>
+        </div>
+      
+        <div class="box">
+        <h2>SIGUEME</h2>
+            <div class="red-social">
+                <a href="https://www.facebook.com/profile.php?id=100010684714844" class="fa fa-facebook" target="_blank"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+            </div>
+        </div>
+      </div>
+        <div class="grupo-2">
+        <small>&copy;2022 <b>YONATHAN DLCB</b>.todos los derechos reservados </small>
+        </div>
+      
+      
+      </footer>  <!-- fin de footer-->
+
+    <script src="../static/scripts.js"></script>
+</body>
+</html>
+           
+
+
+
+
+
+
+
+
+
+

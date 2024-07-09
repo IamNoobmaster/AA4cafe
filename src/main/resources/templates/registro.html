@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:frament="head">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Inicio</title>
+	<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+     <!-- inconos-->
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/af368442cf.js" crossorigin="anonymous"></script>
+    
+    <!-- estilos de css-->
+    <link href="/css/footer.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
+</head>
+<body>
+
+ <header th:replace="index::header"> </header>
+ <br><br><br>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div th:if=${param.exito}>
+                <div class="alert alert-info">Se ha registrado exitosamente a
+                    la aplicación</div>
+            </div>
+            <div class="bg-faded p-5 rounded">
+                <h1 class="section-heading mb-4">
+                    <span class="section-heading-upper">Registrar Usuario</span>
+                </h1>
+                <form th:action="@{/registro}" method="post" th:object="${usuario}">
+                    <div class="form-group">
+                        <label class="control-label" for="nombre">Nombre :</label>
+                        <input id="nombre" type="text" class="form-control" th:field="*{nombre}"
+                               required autofocus="autofocus">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="apellido">Apellido :</label>
+                        <input id="apellido" class="form-control" th:field="*{apellido}"
+                               required autofocus="autofocus">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="email">Email :</label>
+                        <input id="email" type="email" class="form-control" th:field="*{email}"
+                               required autofocus="autofocus">
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label" for="password">Password :</label>
+                        <input type="password" id="password" class="form-control" th:field="*{password}"
+                               required autofocus="autofocus">
+                    </div>
+                    <div class="form-group text-center">
+                        <br><br>
+
+    <button type="submit" class="btn btn-warning">Registrar</button>
+    <br>
+    <br>
+<span>Si estás registrado <a th:href="@{/login}" style="color: inherit; text-decoration: underline; transition: color 0.3s;" onmousedown="this.style.color='cream'" onmouseup="this.style.color='brown'" onmouseout="this.style.color='inherit'" onmouseleave="this.style.color='inherit'">inicia sesión aquí</a></span>
+</div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+  <!--footer-------------------------------->
+
+  <footer th:replace="index::footer"> </footer>
+    <script src="../static/scripts.js"></script>
+
+</body>
+</html>

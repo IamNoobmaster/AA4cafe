@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <title>Tienda</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+    <!-- Iconos-->
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/af368442cf.js" crossorigin="anonymous"></script>
+    <!-- Estilos de CSS-->
+    <link href="/css/footer.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link href="/css/tienda.css" rel="stylesheet" />
+</head>
+<body>
+    <header th:replace="index::header"> </header>
+<br><br>
+    <section>
+        <!-- Cards -->
+        <div class="container-items">
+            <!-- Primer producto -->
+            <div class="item">
+                <figure>
+                    <img src="./img/mazamorra.jpg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h2>Mazamorra</h2>
+                    <p class="price">S/100</p>
+                    <button>Adquirir</button>
+                </div>
+            </div>
+            <!-- Segundo producto -->
+            <div class="item">
+                <figure>
+                    <img src="./img/alfajores.jpg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h2>Alfajores</h2>
+                    <p class="price">S/170</p>
+                    <button>Adquirir</button>
+                </div>
+            </div>
+            <!-- Tercer producto -->
+            <div class="item">
+                <figure>
+                    <img src="./img/turron.png" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h2>Turrón</h2>
+                    <p class="price">S/150</p>
+                    <button>Adquirir</button>
+                </div>
+            </div>
+            <!-- Cuarto producto -->
+            <div class="item">
+                <figure>
+                    <img src="./img/panfrances.jpg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h2>Pan Francés</h2>
+                    <p class="price">S/90</p>
+                    <button>Adquirir</button>
+                </div>
+            </div>
+            <!-- Quinto producto -->
+            <div class="item">
+                <figure>
+                    <img src="./img/pandetrigo.jpg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h2>Pan de Trigo</h2>
+                    <p class="price">S/60</p>
+                    <button>Adquirir</button>
+                </div>
+            </div>
+            <!-- Sexto producto -->
+            <div class="item">
+                <figure>
+                    <img src="./img/biscocho.jpg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h2>Biscocho</h2>
+                    <p class="price">S/90</p>
+                    <button>Adquirir</button>
+                </div>
+            </div>
+            <!-- Séptimo producto -->
+            <div class="item">
+                <figure>
+                    <img src="./img/pastelchocolate.jpg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h2>Pastel de Chocolate</h2>
+                    <p class="price">S/50</p>
+                    <button>Adquirir</button>
+                </div>
+            </div>
+            <!-- Octavo producto -->
+            <div class="item">
+                <figure>
+                    <img src="./img/pasteldebodas.jpg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h2>Pastel de Bodas</h2>
+                    <p class="price">S/50</p>
+                    <button>Adquirir</button>
+                </div>
+            </div>
+            <!-- Noveno producto -->
+            <div class="item">
+                <figure>
+                    <img src="./img/pastedebaby.jpeg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h2>Pastel de Baby Shower</h2>
+                    <p class="price">S/70</p>
+                    <button>Adquirir</button>
+                </div>
+            </div>
+            <!-- Décimo producto -->
+            <div class="item">
+                <figure>
+                    <img src="./img/huevos.jpg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h2>Huevos Revueltos</h2>
+                    <p class="price">S/80</p>
+                    <button>Adquirir</button>
+                </div>
+            </div>
+            <!-- Undécimo producto -->
+            <div class="item">
+                <figure>
+                    <img src="./img/pankk.jpg" alt="producto" />
+                </figure>
+                <div class="info-product">
+                    <h2>Panqueques</h2>
+                    <p class="price">S/32</p>
+                    <button>Adquirir</button>
+                </div>
+            </div>
+        </div> 
+
+    </section>
+
+
+    <footer th:replace="index::footer"> </footer>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>

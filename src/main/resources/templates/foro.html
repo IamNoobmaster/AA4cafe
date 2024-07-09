@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+        <title>Productos</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+     <!-- inconos-->
+     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/af368442cf.js" crossorigin="anonymous"></script>
+     
+     <!-- estilos de css-->
+     <link href="/css/footer.css" rel="stylesheet" />
+     <link href="/css/styles.css" rel="stylesheet" />
+     <link href="/css/foro.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header th:replace="index::header"> </header>
+
+        <section class="opiniones">
+            <h1>Opiniones de Usuario</h1>
+            <!-- Primer comentario -->
+            <div class="comentario">
+                <div class="user">
+                    <img src="./img/gato.jpg" alt="Imagen de Señitovea">
+                    <h3>Señitovea</h3>
+                    <div class="comentarios">
+                        <p>Alguien para tomar cafe XD</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Segundo comentario -->
+            <div class="comentario">
+                <div class="user">
+                    <img src="./img/fino.jpg" alt="Imagen de Don Antonio">
+                    <h3>Don Antonio</h3>
+                    <div class="comentarios">
+                        <p>Y lo mejor que ha veces hay descuentos</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tercer comentario -->
+            <div class="comentario">
+                <div class="user">
+                    <img src="./img/xd.jpg" alt="Imagen de El delas recargas">
+                    <h3>El delas recargas</h3>
+                    <div class="comentarios">
+                        <p>Pense que me iba a ser malo cafe pero no</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Cuarto comentario -->
+            <div class="comentario">
+                <div class="user">
+                    <img src="./img/ana.jpg" alt="Imagen de Doña ANA">
+                    <h3>Doña ANA</h3>
+                    <div class="comentarios">
+                        <p>Recomendado 100% el mejor cafe</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Quinto comentario -->
+            <div class="comentario">
+                <div class="user">
+                    <img src="./img/unu.jpg" alt="Imagen de ChicaNoob">
+                    <h3>ChicaNoob</h3>
+                    <div class="comentarios">
+                        <p>Muy buen servicio de pasteles.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Sexto comentario -->
+            <div class="comentario">
+                <div class="user">
+                    <img src="./img/2xd.jpg" alt="Imagen de Adicto al CAFE">
+                    <h3>Adicto al CAFE</h3>
+                    <div class="comentarios">
+                        <p>Pongan mas CAFE y de paso mota</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <footer th:replace="index::footer"> </footer>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
